@@ -11,8 +11,51 @@ body.index {
     margin: 6vw 0;
     height: auto;
   }
+  // Меню
+  .menu {
+    position: fixed;
+    height: 4vw;
+    width: 90%;
+    padding: 1vw 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 1vw;
+    border-radius: 1.17vw;
+    background-color: #211F1D;
+    z-index: 10;
+    img {
+      border-radius: 0;
+      height: 100%;
+      width: auto;
+    }
+    .menu_cattegories {
+      display: flex;
+      flex-direction: row;
+      .menu_button {
+        margin-right: 0.7vw;
+        padding: 0.5vw 2vw;
+        width: auto;
+        height: 2.4vw;
+        border-radius: 2vw;
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+     
+        p {
+          margin-top: -0.1vw;
+          font-size: 1vw ;
+          font-weight: 300;
+          color: #ffffff;
+        }
+      }
+      .menu_button:hover {
+        background-color: #F45734;
+      }
+    }
+  }
   // блок с обложкой
   #index_cover {
+    margin-top: 10vw;
   div:first-of-type {
     h1 {
       color: #F45734;

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'MUSHBOOM';
+  src: url('../fonts/Soyuz Grotesk.woff') format('woff'),
+    url('../fonts/Soyuz Grotesk.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MUSHBOOM';
+  src: url('../fonts/TRYGrtsk-Light.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}

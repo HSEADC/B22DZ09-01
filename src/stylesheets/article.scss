@@ -1,8 +1,52 @@
 body.article {
     width: 100%;
-    padding: 2.5vw 5vw ;
+    padding: 2.5vw 5vw 0 5vw ;
     background-color: #211F1D ;
     overflow-x: hidden;
+      // Меню
+  .menu {
+    position: fixed;
+    height: 4vw;
+    width: 90%;
+    padding: 1vw 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 1vw;
+    border-radius: 1.17vw;
+    background-color: #F45734;
+    z-index: 10;
+    img {
+        border-radius: 0;
+      height: 100%;
+      width: auto;
+    }
+    .menu_cattegories {
+      display: flex;
+      flex-direction: row;
+      .menu_button {
+        margin-right: 0.7vw;
+        padding: 0.5vw 2vw;
+        width: auto;
+        height: 2.4vw;
+        border-radius: 2vw;
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        p {
+            margin-top: -0.1vw;
+          font-size: 1vw ;
+          font-weight: 300;
+          color: #ffffff;
+        }
+      }
+      .menu_button:nth-of-type(1) {
+        border: 0.1vw solid #FFFFFF;
+      }
+      .menu_button:hover {
+        background-color: #211F1D;
+      }
+    }
+  }
     // общие стили
     p, h1, h2, h3 {
         color: #FFFFFF;
@@ -26,6 +70,7 @@ body.article {
     }
     // главный заголовок
     .header {
+        margin-top: 10vw;
         h2 {
             text-align: center;
         }
@@ -33,14 +78,14 @@ body.article {
             position: absolute;
             width: 3.5vw;
             height: auto;
-            top: 2vw;
+            top: 12vw;
             left: 17.5vw;
         }
         img:last-of-type {
             position: absolute;
             width: 3.5vw;
             height: auto;
-            top: 4.9vw;
+            top: 14.9vw;
             right: 14.5vw;
         }
     }
@@ -81,7 +126,7 @@ body.article {
     .article_img1 {
         position: absolute;
         left: 5vw;
-        top: 20vw;
+        top: 30vw;
         width: 28vw;
         height: 32vw;
         img:first-of-type {
@@ -151,7 +196,7 @@ body.article {
     width: 100%;
     height: 16vw;
     border-radius: 1.17vw 1.17vw 0px 0px;
-    background: #211F1D;
+    background: #F45734;
     padding: 3vw;
     display: flex;
     flex-direction: row;
@@ -163,7 +208,8 @@ body.article {
       flex-direction: row;
       justify-content: space-between;
       h5 {
-        color: #979b99;
+        color: #FFFFFF;
+        opacity: 60%;
       }
       h6 {
         transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
@@ -171,7 +217,7 @@ body.article {
         margin: 0.8vw 0vw;
       }
       h6:hover {
-        color: #F45734;
+        color: #211F1D;
       }
       // блок с соц сетями
       .footer_social_network {
@@ -194,14 +240,14 @@ body.article {
               
               rect {
                 fill: none;
-                stroke: #F45734;
+                stroke: #FFFFFF;
                 stroke-dashoffset: 1vw;
                 stroke-opacity: 1;
                 transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
               }
               &:hover {
                 rect {
-                  fill: #F45734;
+                  fill: #211F1D;
                   
                 }
               }
