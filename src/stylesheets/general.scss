@@ -72,6 +72,35 @@ body {
     background-color: var(--Charcoal);
 }
 
+
+
+  .title {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 8px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .row {
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    transition: height 400ms;
+    width: 200px;
+  }
+  .icon {
+    fill: none;
+    margin-top: 0px;
+    stroke: #000;
+    stroke-width: 12;
+    stroke-linecap: square;
+    stroke-linejoin: round;
+  }
+  
+
 @media only screen and (max-width: 430px) {
     body {
         width: 100vw;

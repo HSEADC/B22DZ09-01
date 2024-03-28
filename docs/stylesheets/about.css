@@ -1,0 +1,238 @@
+/* общее */
+* {
+  box-sizing: border-box;
+}
+.about {
+  font-family: 'MUSHBOOM';
+  font-weight: 700;
+  font-style: normal;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  padding: 0 5.625vw 0 5.625vw;
+}
+h1 {
+  font-size: 7.5vw;
+  color: white;
+  line-height: 93.5%;
+}
+h3 {
+  color: #fff;
+  font-size: 3.75vw;
+  line-height: 91.157%;
+}
+h4 {
+  color: white;
+  font-size: 2.4vw;
+}
+p,
+li {
+  color: white;
+  margin-top: 2vw;
+  font-size: 1.25vw;
+  font-weight: 100;
+  line-height: 120%;
+}
+/* первая секция */
+#first_block {
+  width: 100%;
+  height: 28vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#first_text {
+  width: 60%;
+}
+#first_img {
+  width: 40%;
+}
+/* вторая секция */
+#second_block {
+  padding: 4.2vw 6vw 4.2vw 6vw;
+  background: url('../images/background_about1.png');
+  background-size: cover;
+  border-radius: 3.3vw;
+  width: 100%;
+  height: 21.25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* лого */
+#second_logo {
+  height: 120%;
+}
+#second_text {
+  width: 55%;
+}
+/* блок с нашей командой */
+#team {
+  display: flex;
+  justify-content: space-between;
+}
+#team h3 {
+  color: #f87239;
+}
+#team img {
+  margin-top: 0.5vw;
+  height: 4vw;
+  animation: shaking 1s infinite linear;
+}
+#second_text p {
+  margin-top: 0vw;
+}
+/* третья секция */
+#third_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vw;
+}
+#third_block h3 {
+  width: 30vw;
+}
+/* плашки с полезностями */
+#plashki div {
+  border-radius: 3.3vw;
+  display: flex;
+  align-items: center;
+  width: 15.234vw;
+  height: 3.125vw;
+  background-color: #f87239;
+  margin: 0.4vw;
+}
+#plashki div p {
+  margin: 0 auto 0 auto;
+}
+#biblioteka {
+  position: relative;
+  overflow: hidden;
+  border: 0.1vw solid white;
+  width: 38vw;
+  height: 14vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 3.281vw;
+  background-image: url('../images/gradient.svg');
+  background-size: cover;
+}
+#biblioteka h1,
+#biblioteka h4 {
+  margin: 0 auto 0.5vw auto;
+}
+#biblioteka img {
+  position: absolute;
+}
+#biblioteka img:first-of-type {
+  height: 10vw;
+  left: 1vw;
+  top: -2vw;
+}
+#biblioteka img:nth-of-type(2) {
+  height: 11vw;
+  left: 27vw;
+  top: -5vw;
+}
+#biblioteka img:nth-of-type(3) {
+  height: 7vw;
+  left: 35vw;
+  top: 12vw;
+}
+#biblioteka img:nth-of-type(4) {
+  height: 12vw;
+  left: 26vw;
+  top: 6vw;
+}
+#biblioteka img:nth-of-type(5) {
+  height: 7vw;
+  left: 4vw;
+  top: 12vw;
+}
+#fourth_block {
+  margin-top: 4vw;
+  display: flex;
+  align-items: center;
+}
+/* грибочки */
+#fourth_mush img:nth-of-type(1) {
+  margin-left: -2vw;
+  width: 30vw;
+}
+#fourth_mush img:nth-of-type(2) {
+  margin: 0 -5vw 0 -6vw;
+  width: 20vw;
+}
+#fourth_mush img:nth-of-type(3) {
+  width: 12vw;
+}
+#fourth_mush img:nth-of-type(4) {
+  margin-left: -2vw;
+  width: 16vw;
+}
+
+#fourth_mush {
+  width: 68vw;
+}
+#goals {
+  width: 20vw;
+  margin-left: -2vw;
+}
+li {
+  margin-top: 0.7vw;
+}
+/* подвал */
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vw;
+  padding: 3vw;
+  width: 100%;
+  height: 11vw;
+  background: #fff;
+  border-radius: 3.3vw 3.3vw 0 0;
+}
+footer div {
+  display: flex;
+  margin-top: 1vw;
+}
+/* кнопочки на соц сети */
+footer a {
+  margin: 0 0.5vw 0 0;
+  border-radius: 3.3vw;
+  border: 0.1vw solid black;
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 3.125vw;
+  background-image: url('../images/gradient.svg');
+  background-size: cover;
+  padding: 0vw 1vw 0vw 1vw;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+footer p {
+  color: black;
+  margin: 0vw 1vw 0vw 1vw;
+}
+footer a:hover {
+  background-color: #f87239;
+  transition: all 0.5s ease-out;
+}
+footer img {
+  width: 2vw;
+  height: 2vw;
+}
+/* анимация трясучки грибов */
+@keyframes shaking {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}

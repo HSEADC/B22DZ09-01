@@ -1,0 +1,260 @@
+.index {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  margin: 0;
+  font-size: 32vw;
+  width: 100%;
+}
+.inside {
+  overflow: hidden;
+  margin: 2% 1% 2% 0;
+  width: 100vw;
+  height: 80vw;
+  justify-content: space-around;
+  display: flex;
+}
+.left_block {
+  height: 60vw;
+  width: 25vw;
+  align-items: center;
+}
+.left_mushroom {
+  background: url('../images/mushroom1.webp');
+  height: 25vw;
+  border-radius: 3.3vw;
+  background-size: cover;
+  width: 25vw;
+  animation: left 1s ease;
+}
+@keyframes left {
+  0% {
+    height: 45vw;
+    width: 100%;
+    border-radius: 3.3vw;
+  }
+  100% {
+    height: 25vw;
+    width: 100%;
+    border-radius: 3.3vw;
+  }
+}
+.logo {
+  position: relative;
+  height: 50%;
+  left: 13%;
+  bottom: 30%;
+}
+#demo {
+  position: relative;
+  padding-top: 8%;
+  font-family: 'MUSHBOOM';
+  font-weight: 700;
+  opacity: 100%;
+  animation: clock 3s ease;
+}
+@keyframes clock {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.days {
+  position: absolute;
+  margin-top: -2%;
+  left: 20%;
+  font-size: 25%;
+  color: #f87239;
+}
+
+.hours {
+  position: absolute;
+  font-size: 30%;
+  margin-top: 30%;
+  color: #f87239;
+}
+
+.minutes {
+  position: absolute;
+  margin-top: 30%;
+  right: 10%;
+  font-size: 25%;
+  color: #f87239;
+}
+
+.days1 {
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 37%;
+  color: white;
+  font-size: 7%;
+}
+
+.hours1 {
+  position: absolute;
+  color: white;
+  margin-top: 65%;
+  font-size: 7%;
+  margin-left: 5%;
+}
+
+.minutes1 {
+  position: absolute;
+  color: white;
+  margin-top: 65%;
+  font-size: 7%;
+  margin-left: 58%;
+}
+.middle_block {
+  width: 40vw;
+  height: 45vw;
+  align-items: center;
+  background: url('../images/mushroom2.webp');
+  background-size: cover;
+  border-radius: 3.3vw;
+}
+
+.get_verified {
+  position: relative;
+  margin: 40% auto 0 23%;
+  justify-content: space-around;
+  width: 70%;
+  height: 40%;
+}
+
+.follow_us {
+  position: relative;
+  font-size: 8%;
+  font-family: 'MUSHBOOM';
+  font-weight: 700;
+  color: white;
+  line-height: 80%;
+}
+
+#my_form {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+}
+#email {
+  position: relative;
+  width: 65%;
+  height: 30%;
+  padding: 3%;
+  margin-bottom: 2%;
+  border: none;
+  border-radius: 3.3vw;
+}
+#email::placeholder {
+  color: #f87239;
+}
+#my-form-button {
+  padding: 3%;
+  cursor: pointer;
+  position: relative;
+  top: 10%;
+  width: 69%;
+  height: 30%;
+  border: none;
+  border-radius: 3.3vw;
+  background-color: #f87239;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+#my-form-button:hover {
+  transform: scale(1.1);
+}
+.right_block {
+  height: 90vh;
+  height: 45vw;
+  align-items: center;
+}
+.about_us {
+  position: relative;
+  font-family: 'MUSHBOOM';
+  width: 100%;
+  height: 40%;
+  margin: -5% 0 0 0;
+  animation: about 6s ease;
+}
+@keyframes about {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.know_more1 {
+  padding: 20% 0 0 15%;
+  margin: 0;
+  position: relative;
+  font-size: 10%;
+  font-weight: 700;
+  color: white;
+  line-height: 100%;
+}
+
+.know_more2 {
+  cursor: pointer;
+  padding: 5% 0 0 0;
+  margin: 3% 0 0 10%;
+  text-align: center;
+  width: 17vw;
+  height: 7vw;
+  position: relative;
+  font-size: 18%;
+  font-weight: 700;
+  background-color: #f87239;
+  color: white;
+  border-radius: 3.3vw;
+  transition: all 0.2s ease-in-out;
+}
+
+.know_more2 a {
+    text-decoration: none;
+    color: white;
+}
+.know_more2:hover {
+  transform: scale(1.1);
+}
+.right_mushroom {
+  background: url('../images/mushroom3.webp');
+  height: 25vw;
+  border-radius: 3.3vw;
+  background-size: cover;
+  width: 25vw;
+  margin-top: 14%;
+  position: relative;
+  animation: right 1s ease;
+}
+@keyframes right {
+  0% {
+    height: 45vw;
+  }
+  100% {
+    height: 25vw;
+  }
+}
+.guide {
+  position: relative;
+  font-size: 12%;
+  font-family: 'MUSHBOOM';
+  font-weight: 700;
+  color: white;
+  padding: 10% 0 0 15%;
+  line-height: 80%;
+}
+.guide_room {
+  margin: 5% 0 0 10%;
+  font-size: 25%;
+  font-family: 'MUSHBOOM';
+  font-weight: 700;
+  color: white;
+  line-height: 75%;
+}
